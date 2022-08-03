@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Project Pig Game</title>
+  </head>
+  <body>
+    <main>
+      <!-- player one section -->
+      <section class="player player1">
+        <h3 class="name">PLAYER 1</h3>
+        <p class="score-1" id="score--1">40</p>
+        <div class="scorebutton">
+          <p class="scorename">CURRENT</p>
+          <p class="currentScore-1" style="padding-top: 1rem; font-size: 2rem">
+            0
+          </p>
+        </div>
+      </section>
+      <!-- player two sectoin  -->
+      <section class="player player2">
+        <h3 class="name">PLAYER 2</h3>
+        <p class="score-2" id="score--2">50</p>
+        <div class="scorebutton">
+          <p class="scorename">CURRENT</p>
+          <p class="currentScore-2" style="padding-top: 1rem; font-size: 2rem">
+            0
+          </p>
+        </div>
+      </section>
+
+      <!-- dice images -->
+      <img
+        src="./images/dice-1.png"
+        alt="diceimage"
+        class="diceimage"
+        id="diceimage"
+      />
+      <!-- newgame button rolldice button holdscore button -->
+      <button class="button newgame">
+        <!-- <i class="fa-solid fa-play fa-beat"> </i> new game -->
+        <i class="fa-solid fa-sync fa-spin"></i> new game
+      </button>
+      <button class="button rolldice">
+        <i class="fa-solid fa-dice-six"></i> roll dice
+      </button>
+      <button class="button holdscore">
+        <i class="fa-solid fa-circle-pause"></i> hold
+      </button>
+    </main>
+
+    <footer>
+      <p>Design <i class="fa-regular fa-heart"></i> Built By</p>
+      <p>
+        <a
+          href="https://www.linkedin.com/in/richhapal-choudhary-87763b14b/"
+          target="_blank"
+          >Richhapal</a
+        >
+      </p>
+    </footer>
+
+    <!-- js file links -->
+    <script src="script.js"></script>
+    <!-- fontawesome list -->
+    <script
+      src="https://kit.fontawesome.com/1b4a8490fe.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- script list -->
+  </body>
+</html>
