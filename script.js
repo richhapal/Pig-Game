@@ -1,5 +1,20 @@
 'use strict';
 
+// display alert when widow width is less than 945px
+
+function printMessage() {
+  let printMessage = document.querySelector('.print');
+  printMessage.classList.toggle('hidden');
+  let main = document.querySelector('main');
+  main.classList.toggle('hidden');
+  let footer = document.querySelector('footer');
+  footer.classList.toggle('hidden');
+}
+let widthOfWindow = window.innerWidth;
+if (widthOfWindow <= 945) {
+  printMessage();
+}
+
 let score1El = document.getElementById('score--1');
 let score2El = document.getElementById('score--2');
 
@@ -80,7 +95,7 @@ btnHold.addEventListener('click', function () {
     score1El.textContent = score[0];
     score2El.textContent = score[1];
     // winning condtion
-    if (score[activePlayer] >= 25) {
+    if (score[activePlayer] >= 100) {
       document
         .querySelector(`.player${activePlayer + 1}`)
         .classList.add('winner');
